@@ -18,12 +18,16 @@ function Trainer(name, tasks = []) {
         if (this.tasks.length === 1) {
             console.log('Nearly Finished!')
         }
-        console.log(`Remaining Tasks: ${this.tasks}`);
+        console.log(`Remaining Tasks: ${this.tasks}`)
     };
 }
 
+Trainer.prototype.test = function Test() {
+
+}
+
 function whoAmI() {
-    console.log0
+    console.log(this)
     console.log(`I am ${this.name}.`);
 }
 
@@ -37,7 +41,7 @@ console.log(Raz.tasks);
 Raz.printTasks();
 
 whoAmI()
-whoAmI()
+whoAmI.call(Chris)
 
 if (getArea == getArea) {
     console.log("getArea == getArea = true")
